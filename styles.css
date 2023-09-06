@@ -1,0 +1,48 @@
+
+*{
+ box-sizing: border-box;
+}
+
+:root{
+    --dark-color: #000;
+    --clear-color: #60fcfe;
+    --link-color: #0f0;   
+}   
+
+html{   
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.inline-header{
+    text-align: center;
+}
+
+.article-box{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: max-content;
+}
+
+.section-box{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+@media screen and (min-width: 480px) {
+    .section-box{
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .section-box{
+        grid-template-columns: 33% 34% 33%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .section-box{
+        grid-template-columns: repeat(5, 20%);
+    }
+}
